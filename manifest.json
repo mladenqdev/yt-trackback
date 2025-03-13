@@ -3,8 +3,16 @@
   "name": "YT Trackback",
   "version": "0.0.1",
   "description": "Keep track of unavailable videos in your YouTube playlists",
-  "permissions": ["storage"],
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["*://*.youtube.com/*"],
   "action": {
-    "default_title": "YT Trackback"
-  }
+    "default_title": "YT Trackback",
+    "default_popup": "src/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["src/content/content.js"]
+    }
+  ]
 }
