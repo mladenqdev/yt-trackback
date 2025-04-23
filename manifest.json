@@ -1,17 +1,26 @@
 {
   "manifest_version": 3,
   "name": "YT Trackback",
-  "version": "0.0.1",
-  "description": "Keep track of unavailable videos in your YouTube playlists",
-  "permissions": ["storage", "activeTab"],
-  "host_permissions": ["*://*.youtube.com/*"],
+  "version": "1.0",
+  "description": "Track unavailable videos in YouTube playlists",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://archive.is/*",
+    "https://archive.ph/*",
+    "https://archive.org/*",
+    "https://web.archive.org/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
   "action": {
-    "default_title": "YT Trackback",
     "default_popup": "src/popup/popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
+      "matches": ["https://www.youtube.com/*"],
       "js": ["src/content/content.js"]
     }
   ]
