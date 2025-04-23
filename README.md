@@ -1,6 +1,6 @@
 # YT Trackback
 
-YT Trackback is a Chrome extension that helps you recover lost videos from your YT playlists. If you're like me and you don't use Spotify, Tidal, Deezer, or other popular music platforms—but instead carefully curate your playlists on YouTube, you've probably faced the frustrating moment when you open a playlist after a while, only to find that some videos are missing, with no way to know which ones! That's why I created YT Trackback: to help you identify, track, and recover information about unavailable videos in your YouTube playlists.
+YT Trackback is a Chrome extension that helps you recover lost videos from your YT playlists. If you're like me and you don't use Spotify, Tidal, Deezer, or other popular music platforms, but instead carefully curate your playlists on YouTube, you've probably faced the frustrating moment when you open a playlist after a while, only to find that some videos are missing, with no way to know which ones! That's why I created YT Trackback: to help you identify, track, and recover information about unavailable videos in your YouTube playlists.
 
 ---
 
@@ -65,4 +65,4 @@ I love building and maintaining YouTube playlists, but YouTube doesn't tell you 
 2. Go to `chrome://extensions` in your browser.
 3. Enable "Developer mode" (top right).
 4. Click "Load unpacked" and select the project folder.
-5. Open any YouTube playlist and click the YT Trackback icon to get started!
+5. Open any YouTube playlist, click show unavailable videos (if there are any) and then click the YT Trackback icon to recover them!
